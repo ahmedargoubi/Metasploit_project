@@ -20,7 +20,7 @@ La méthodologie de test de pénétration suit généralement les étapes suivan
 
 ### 1. Scan des Ports
 
-Pour commencer, nous avons utilisé la commande `search portscan` dans Metasploit pour rechercher des modules disponibles pour le scan de ports. Ensuite, nous avons choisi d'utiliser le module `scanner/portscan/syn` pour effectuer un scan SYN sur la cible.
+Pour commencer, j'ai utilisé la commande `search portscan` dans Metasploit pour rechercher des modules disponibles pour le scan de ports. Ensuite, j'ai choisi d'utiliser le module `scanner/portscan/syn` pour effectuer un scan SYN sur la cible.
 
 - **Commande** : `search portscan`
   - Cette commande permet de rechercher des modules liés aux scans de ports disponibles dans Metasploit.
