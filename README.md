@@ -16,7 +16,7 @@ La méthodologie de test de pénétration suit généralement les étapes suivan
 4. **Post-Exploitation** : Exploration des systèmes compromis, extraction de données sensibles, et élévation de privilèges.
 5. **Rapport** : Documentation des vulnérabilités découvertes, des méthodes d'exploitation utilisées, et des recommandations pour sécuriser les systèmes.
 
-## Collection des Données
+## Reconnaissance
 
 ### 1. Scan des Ports
 
