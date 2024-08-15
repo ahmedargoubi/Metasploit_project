@@ -37,5 +37,6 @@ Before initializing the Metasploit database, you need to start the PostgreSQL se
 ```bash
 systemctl start postgresql
 ```
+
 ![hostonly](cap/start.png)
 
