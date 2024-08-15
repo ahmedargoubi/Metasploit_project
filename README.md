@@ -26,7 +26,7 @@ This project demonstrates the use of Metasploit for penetration testing in a con
 
 ## Configuring PostgreSQL
 
-An important feature of Metasploit is its backend database support for PostgreSQL, which allows you to store penetration-testing results effectively. Penetration tests often generate a large amount of data and can span several days. This makes it crucial to store intermediate results and findings, such as target host data, system logs, collected evidence, and report data, in a structured way. Metasploit’s integration with PostgreSQL enables quick and efficient storage of these results.
+An important feature of Metasploit is its backend database support for PostgreSQL, which allows us to store penetration-testing results effectively. Penetration tests often generate a large amount of data and can span several days. This makes it crucial to store intermediate results and findings, such as target host data, system logs, collected evidence, and report data, in a structured way. Metasploit’s integration with PostgreSQL enables quick and efficient storage of these results.
 
 In this section, we will walk through the process of installing and configuring the PostgreSQL database on Kali Linux.
 
