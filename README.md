@@ -52,7 +52,7 @@ If the database is already configured, we may see the following output:
 
 ![hostonly](cap/database.png)
 
-Step 3: Verify Database Connection
+### Step 3: Verify Database Connection
 
 We can verify that the database is successfully connected to Metasploit by launching Metasploit and checking the database status:
 
