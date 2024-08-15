@@ -24,3 +24,16 @@ This project demonstrates the use of Metasploit for penetration testing in a con
   - **IP Address:** 192.168.23.160
   - **Role:** Modern System
 
+## Configuring PostgreSQL
+
+An important feature of Metasploit is its backend database support for PostgreSQL, which allows you to store penetration-testing results effectively. Penetration tests often generate a large amount of data and can span several days. This makes it crucial to store intermediate results and findings, such as target host data, system logs, collected evidence, and report data, in a structured way. Metasploit’s integration with PostgreSQL enables quick and efficient storage of these results.
+
+In this section, we will walk through the process of installing and configuring the PostgreSQL database on Kali Linux.
+
+### Step 1: Start PostgreSQL Service
+
+Before initializing the Metasploit database, you need to start the PostgreSQL server. You can do this by running the following command in your terminal:
+
+```bash
+systemctl start postgresql
+```
