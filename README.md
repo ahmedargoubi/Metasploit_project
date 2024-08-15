@@ -32,7 +32,7 @@ In this section, we will walk through the process of installing and configuring 
 
 ### Step 1: Start PostgreSQL Service
 
-Before initializing the Metasploit database, you need to start the PostgreSQL server. You can do this by running the following command in your terminal:
+Before initializing the Metasploit database, we need to start the PostgreSQL server. we can do this by running the following command in your terminal:
 
 ```bash
 systemctl start postgresql
