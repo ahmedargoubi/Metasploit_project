@@ -61,5 +61,5 @@ msfconsole
 db_status
 ```
 
-If everything is configured correctly, the output should indicate that Metasploit is connected to the PostgreSQL database.
+With the database configured, Metasploit automatically stores data from our sessions, including scanned hosts, vulnerabilities, and credentials. This feature helps us manage and analyze the results of our penetration tests efficiently.
 
