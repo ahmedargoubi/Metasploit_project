@@ -40,3 +40,26 @@ systemctl start postgresql
 
 ![hostonly](cap/start.png)
 
+### Step 2: Verify Database Initialization
+
+As the database has already been configured, we skip the initialization step. However, if needed, the initialization can be done using the following command:
+
+```bash
+msfdb init
+```
+
+If the database is already configured, we may see the following output:
+
+![hostonly](cap/database.png)
+
+Step 3: Verify Database Connection
+
+We can verify that the database is successfully connected to Metasploit by launching Metasploit and checking the database status:
+
+```bash
+msfconsole
+db_status
+```
+
+If everything is configured correctly, the output should indicate that Metasploit is connected to the PostgreSQL database.
+
