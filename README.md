@@ -17,11 +17,11 @@ This project demonstrates the use of Metasploit for penetration testing in a con
   - **Role:** Vulnerable Target
   
 - **Windows XP**
-  - **IP Address:** 192.168.23.130
+  - **IP Address:** 192.168.23.157
   - **Role:** Legacy System
   
 - **Windows 10**
-  - **IP Address:** 192.168.23.160
+  - **IP Address:** 192.168.23.152
   - **Role:** Modern System
 
 ## Configuring PostgreSQL
