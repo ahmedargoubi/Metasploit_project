@@ -122,6 +122,11 @@ For the purpose of our lab, we will focus on active information gathering. The r
 
 
 
+
+
+
+
+
 There are various ways to perform active information gathering. In this project, I will demonstrate three methods and then select the best one for our specific needs.
 
 ### 1. Portscan Modules in the Auxiliary Module
