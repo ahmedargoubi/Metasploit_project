@@ -176,3 +176,23 @@ To keep track of specific hosts, especially in more extensive environments, it's
 For example, to add a comment to the Metasploitable 2 machine, i used the `hosts -m` command as shown below:
 
 ![Nmap](cap/hosts.png)
+
+### Displaying Open Ports and Their Versions
+
+After displaying the operating systems of our targets, the next step is to gather more detailed information about the services running on each machine. Specifically, we want to identify the versions of the services associated with the open ports on our targets. This is essential for identifying potential vulnerabilities.
+
+To achieve this, we can use the `db_nmap` command with the `-sV` option, which is used for version detection. This command will scan the specified hosts and display all the open ports along with the versions of the services running on those ports.
+
+The command we will use is:
+
+```bash
+db_nmap -sV 192.168.23.152,154,157 -T4
+```
+
+![Nmap](cap/sv.png)
+
+
+Running this command will display all the open ports on the specified machines, along with the versions of the services running on those ports, as shown in the output.
+
+With this information, we can identify which services may be vulnerable based on their versions and proceed with targeted exploitation or further analysis.
+
