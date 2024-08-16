@@ -169,6 +169,8 @@ hosts
 
 This command will list all the hosts along with their associated details, such as IP addresses, operating systems, and any other relevant information that was gathered during the scan.
 
+### Adding Comments to Hosts
+
 To keep track of specific hosts, especially in more extensive environments, it's helpful to add comments. This is particularly useful for identifying targets or noting the purpose of each host.
 
 For example, to add a comment to the Metasploitable 2 machine, i used the `hosts -m` command as shown below:
