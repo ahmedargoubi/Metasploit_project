@@ -64,11 +64,11 @@ db_status
 With the database configured, Metasploit automatically stores data from our sessions, including scanned hosts, vulnerabilities, and credentials. This feature helps us manage and analyze the results of our penetration tests efficiently.
 
 
-## Creating Workspaces
+## Creating Workspace
 
 Workspaces in Metasploit are used to separate datasets, helping us stay organized throughout our penetration tests. By creating a new workspace for each test, we can ensure that our collected data remains isolated from previous or future tests, preventing any contamination or confusion.
 
-### Step 1: Adding a New Workspace
+
 
 To create a new workspace in Metasploit, we use the `-a` option followed by the desired workspace name. :
 
