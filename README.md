@@ -120,4 +120,35 @@ Examples of active information gathering include:
 
 For the purpose of our lab, we will focus on active information gathering. The reason for this choice is that our lab environment is designed to simulate real-world penetration testing scenarios where detailed and actionable information about the target systems is necessary. Active scanning will allow us to identify live hosts, open ports, running services, and potential vulnerabilities, which will be essential for the exploitation phase of our testing.
 
-...
+
+
+There are various ways to perform active information gathering. In this project, I will demonstrate three methods and then select the best one for our specific needs.
+
+### 1. Portscan Modules in the Auxiliary Module
+
+Port scanning is a fundamental technique in penetration testing, used to identify open ports and the services running on them. Metasploit provides several auxiliary modules for port scanning. In the image below, we have used the `auxiliary/scanner/portscan/syn` module. This module performs a SYN scan, which is a fast and stealthy way to identify open ports on the target systems within our subnet `192.168.23.0/24`.
+
+![Portscan](cap/portscan.png)
+
+This method is efficient for identifying active services, but it may not provide enough information about the hosts themselves.
+
+### 2. Host Discovery with ARP Sweep
+
+Another method for gathering information is ARP Sweep, which allows us to enumerate live hosts in the local network using ARP requests. When our target systems are located on the same LAN as the attacking machine, we can perform an ARP scan. This provides a simple and fast way to identify possible targets.
+
+In the image below, we used the `auxiliary/scanner/discovery/arp_sweep` module to scan the network `192.168.23.0/24`. 
+
+![ARP Sweep](cap/arp.png)
+
+While ARP Sweep is useful for quickly identifying live hosts, it does not provide detailed information about the services running on those hosts.
+
+### 3. The db_nmap Way (Best Method)
+
+The final method, and the one I consider the best, is using the `db_nmap` command. This command allows us to leverage Nmap's powerful scanning capabilities while automatically storing the results in our Metasploit database. This integration simplifies the process of managing and analyzing scan results.
+
+In the image below, we used `db_nmap` to scan the entire subnet `192.168.23.0/24`. The results, which include detailed information about the hosts and services, were automatically saved to our Metasploit database for further analysis.
+
+![Nmap](cap/nmap.png)
+
+Using `db_nmap` is advantageous because it combines the power of Nmap with the organizational capabilities of the Metasploit database, making it easier to conduct comprehensive scans and track results over time.
+
