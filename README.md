@@ -202,6 +202,4 @@ To streamline this process, we can use the `services` command in Metasploit. Thi
 
 After running the `db_nmap` scan, you can use the `services` command to view the services detected on the hosts in a much more readable format:
 
-```bash
-services
-```
+![Nmap](cap/services.png)
