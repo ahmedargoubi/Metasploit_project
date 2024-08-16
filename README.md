@@ -196,3 +196,12 @@ Running this command will display all the open ports on the specified machines, 
 
 With this information, we can identify which services may be vulnerable based on their versions and proceed with targeted exploitation or further analysis.
 
+While the `db_nmap` command with the `-sV` option provides a detailed view of the open ports and their corresponding service versions, the output can sometimes be too extensive, making it difficult to quickly assess the important information. 
+
+To streamline this process, we can use the `services` command in Metasploit. This command allows us to display a concise summary of the services running on the hosts, filtering out unnecessary details and focusing on the essentials.
+
+After running the `db_nmap` scan, you can use the `services` command to view the services detected on the hosts in a much more readable format:
+
+```bash
+services
+```
