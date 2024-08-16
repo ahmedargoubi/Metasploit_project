@@ -157,3 +157,20 @@ In the image below, we used `db_nmap` to scan the entire subnet `192.168.23.0/24
 
 Using `db_nmap` is advantageous because it combines the power of Nmap with the organizational capabilities of the Metasploit database, making it easier to conduct comprehensive scans and track results over time.
 
+Now that we have the Nmap scan results in our Metasploit database, we can start by using the `hosts` command to display all the hosts stored in our current workspace.
+
+### Displaying Hosts
+
+To view the list of hosts that have been discovered and stored, simply use the following command:
+
+```bash
+hosts
+```
+
+This command will list all the hosts along with their associated details, such as IP addresses, operating systems, and any other relevant information that was gathered during the scan.
+
+To keep track of specific hosts, especially in more extensive environments, it's helpful to add comments. This is particularly useful for identifying targets or noting the purpose of each host.
+
+For example, to add a comment to the Metasploitable 2 machine, i used the `hosts -m` command as shown below:
+
+![Nmap](cap/hosts.png)
