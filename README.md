@@ -85,7 +85,6 @@ This command adds a new workspace where all the data from our current penetratio
 
 Information gathering and scanning are critical phases in penetration testing. These phases involve collecting data about the target network, systems, and applications to identify potential vulnerabilities. The information collected during these steps forms the foundation for the subsequent exploitation phase.
 
-![hostonly](cap/bcv.jpg)
 
 Information gathering, also known as reconnaissance, is the process of collecting as much information as possible about a target before launching an attack. This phase is crucial as it helps us understand the target’s structure, network topology, and security measures in place.
 
