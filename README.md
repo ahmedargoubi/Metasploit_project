@@ -63,3 +63,62 @@ db_status
 
 With the database configured, Metasploit automatically stores data from our sessions, including scanned hosts, vulnerabilities, and credentials. This feature helps us manage and analyze the results of our penetration tests efficiently.
 
+
+## Creating Workspaces
+
+Workspaces in Metasploit are used to separate datasets, helping us stay organized throughout our penetration tests. By creating a new workspace for each test, we can ensure that our collected data remains isolated from previous or future tests, preventing any contamination or confusion.
+
+### Step 1: Adding a New Workspace
+
+To create a new workspace in Metasploit, we use the `-a` option followed by the desired workspace name. :
+
+```bash
+workspace -a metasploit_project
+```
+
+![hostonly](cap/workspace.png)
+
+This command adds a new workspace where all the data from our current penetration test will be stored. This makes it easier to manage and review the data specific to each test.
+
+
+# Information Gathering and Scanning
+
+Information gathering and scanning are critical phases in penetration testing. These phases involve collecting data about the target network, systems, and applications to identify potential vulnerabilities. The information collected during these steps forms the foundation for the subsequent exploitation phase.
+
+![hostonly](cap/bc.jpg)
+
+Information gathering, also known as reconnaissance, is the process of collecting as much information as possible about a target before launching an attack. This phase is crucial as it helps us understand the target’s structure, network topology, and security measures in place.
+
+There are two primary types of information gathering:
+
+
+![hostonly](cap/ig.png)
+
+#### 1. Passive Information Gathering
+
+Passive information gathering involves collecting information about a target without directly interacting with the target system. This method typically involves searching publicly available information, such as WHOIS records, DNS queries, social media profiles, and other online resources. The key advantage of passive reconnaissance is that it is less likely to alert the target, as no direct probing or scanning occurs.
+
+
+![hostonly](cap/passive.png)
+
+Examples of passive information gathering include:
+- Searching for information in public databases and forums
+- Analyzing metadata from publicly available documents
+- Monitoring network traffic if accessible
+
+#### 2. Active Information Gathering
+
+Active information gathering, on the other hand, involves direct interaction with the target system. This method includes techniques like network scanning, port scanning, and vulnerability scanning, where the tester sends packets to the target to gather data. While more intrusive, active reconnaissance provides more detailed and accurate information about the target’s environment.
+
+![hostonly](cap/active.png)
+
+Examples of active information gathering include:
+- Scanning the network to identify live hosts and open ports
+- Enumerating services running on the target machines
+- Using tools like Nmap or Metasploit’s auxiliary modules to detect vulnerabilities
+
+
+
+For the purpose of our lab, we will focus on active information gathering. The reason for this choice is that our lab environment is designed to simulate real-world penetration testing scenarios where detailed and actionable information about the target systems is necessary. Active scanning will allow us to identify live hosts, open ports, running services, and potential vulnerabilities, which will be essential for the exploitation phase of our testing.
+
+...
